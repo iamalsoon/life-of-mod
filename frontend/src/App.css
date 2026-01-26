@@ -1,0 +1,39 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.taskbar-container {
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 1vh 0;
+  background-color: darkgray; /* find hex code for the bar - also may not need el's bar 0-0*/
+}
+
+/* .notes-button-container:hover {
+  background-color: grey;
+} */
+
+.window-container {
+  display: flex;
+  justify-content: right;
+  height: 90vh;
+}
+
+.notes-background {
+  padding: 3vh 2vw;
+  height: 81vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.notes-button {
+  height: 6vh;
+}
