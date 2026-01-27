@@ -13,25 +13,32 @@ function App() {
     }
   }
 
+  const closeNotes = () => {
+    setIsNotesOpen(false);
+  }
+
   return (
     <div>
       <div className="window-container">
-        <div id="notes-window">
-          {isNotesOpen &&
-            <img 
-              src="src/assets/notes/notes-app-background.png" 
-              alt="notes-app-background"
-              className="notes-background hidden"
-            ></img>
-          }
-          {!isNotesOpen &&
+        {isNotesOpen &&
+          <div>
             <img
               src="src/assets/notes/notes-app-background.png" 
-              alt="notes-app-background"
+              alt="Notes App Background"
               className="notes-background"
             ></img>
-          }
-        </div>
+            <Button onClick={closeNotes}>
+              <img
+                src="src/assets/notes/notes-close-button.png"
+                alt="Notes Close Button"
+                className="notes-close-btn"
+              ></img>
+            </Button>
+            <Box className="notes-thumnail-container">
+              {/* notes container */}
+            </Box>
+          </div>
+        }
       </div>
       <div className="taskbar-container">
         <Button onClick={viewNotes}>

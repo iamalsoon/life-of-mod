@@ -37,3 +37,12 @@ body {
 .notes-button {
   height: 6vh;
 }
+
+.notes-close-btn {
+  height: 4vh;
+  translate: -320% -1965%;
+}
+
+.notes-thumnail-container {
+  
+}
