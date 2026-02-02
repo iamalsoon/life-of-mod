@@ -1,22 +1,12 @@
-import { useState } from 'react'
 import './Notes.css'
 import { Box, Button } from '@mui/material'
 
-function Notes() {
-  const [isNotesOpen, setIsNotesOpen] = useState(false);
-
-  const viewNotes = () => {
-    setIsNotesOpen(!isNotesOpen);
-  }
-
-  const closeNotes = () => {
-    setIsNotesOpen(false);
-  }
+function Notes(props) {
 
   return (
     <div>
       <div className="window-container">
-        {isNotesOpen && (
+        {props.isNotesOpen && (
           <div>
             <img
               src="/assets/notes/notes-app-background.png" 
@@ -24,7 +14,7 @@ function Notes() {
               className="notes-background"
             ></img>
 
-            <Button onClick={closeNotes}>
+            <Button onClick={props.viewNotes}>
               <img
                 src="/assets/notes/notes-close-btn.png"
                 alt="Notes Close Button"
@@ -44,15 +34,6 @@ function Notes() {
           </div>
         )
         }
-      </div>
-      <div className="taskbar-container">
-        <Button onClick={viewNotes}>
-          <img 
-            src="/assets/notes/notes-app-btn.png" 
-            alt="Notes App Button" 
-            className="notes-button"
-          ></img>
-        </Button>
       </div>
     </div>
   )

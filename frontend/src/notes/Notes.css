@@ -6,16 +6,6 @@ body {
   justify-content: end;
 }
 
-.taskbar-container {
-  height: 8vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  padding: 1vh 0;
-  /* need to crop bar to be correct sizing */
-  background: url("../../public/assets/taskbar/empty-taskbar-test.png");
-}
-
 /* .notes-button-container:hover {
   background-color: grey;
 } */
