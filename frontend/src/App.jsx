@@ -19,7 +19,7 @@ function App() {
   return (
     <div>
       <Notes viewNotes={viewNotes} isNotesOpen={isNotesOpen}/>
-      <Taskbar viewNotes={viewNotes} />
+      <Taskbar viewNotes={viewNotes} viewDiscord={viewDiscord} />
       <Discord viewDiscord={viewDiscord} isDiscordOpen={isDiscordOpen}/>
     </div>
   )
